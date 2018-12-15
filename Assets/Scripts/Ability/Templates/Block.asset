@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b6e4d30725669a448f460b29bda71a5, type: 3}
+  m_Name: Block
+  m_EditorClassIdentifier: 
+  _name: Block
+  _tooltip: 
+  _type: {fileID: 11400000, guid: 673fb8262fa1e5147a3063c8ef3d6a9c, type: 2}
+  _effects:
+  - {fileID: 11400000, guid: 8cc60ed70b54eb34aaca7d7cb38f7f49, type: 2}
+  _baseCooldown: 5
+  _targeting: {fileID: 11400000, guid: fb1c10e203207c74584bb18c7904e16a, type: 2}
+  _animationName: Attack
+  _mainValue: 0.5
+  _mainType: {fileID: 0}
+  _secondaryValue: 0
+  _secondaryType: {fileID: 0}
+  _tertiaryValue: 0
+  _tertiaryType: {fileID: 0}
+  _duration: 5
+  _tickInterval: 0
+  _sfx: {fileID: 0}
+  floatDataKeys: []
+  floatData: []
+  typeDataKeys: []
+  typeData: []
+  intDataKeys: []
+  intData: 

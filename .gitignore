@@ -1,0 +1,60 @@
+###
+# Unity folders and files
+###
+[Aa]ssets/AssetStoreTools*
+[Bb]uild/
+[Bb]uilds/
+[Ll]ibrary/
+[Ll]ocal[Cc]ache/
+[Oo]bj/
+[Tt]emp/
+[Uu]nityGenerated/
+# file on crash reports
+sysinfo.txt
+# Unity3D generated meta files
+*.pidb.meta
+
+###
+# VS/MD/Rider/Consulo solution and project files
+###
+[Ee]xportedObj/
+*.booproj
+*.csproj
+*.sln
+*.suo
+*.svd
+*.tmp
+*.booproj
+*.unityproj
+*.user
+*.userprefs
+*.pidb
+.vs/
+.vscode/
+.consulo/
+.idea/
+.DS_Store
+
+###
+# Builds
+###
+*.apk
+*.unitypackage
+*.app
+*.exe
+*.log
+*.zip
+
+###
+# OS generated
+###
+*.ink
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+$RECYCLE.BIN/
+Icon?
+ehthumbs.db
+Thumbs.db

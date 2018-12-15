@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b6e4d30725669a448f460b29bda71a5, type: 3}
+  m_Name: BasicAttack
+  m_EditorClassIdentifier: 
+  _name: Basic Attack
+  _tooltip: A basic attack which deals 3 Physical damage. 1 second cooldown.
+  _type: {fileID: 11400000, guid: 0bf5e351eb8928f4b9e21123c5a389ab, type: 2}
+  _effects:
+  - {fileID: 11400000, guid: db9b439f9879b114090f04ea3b85123a, type: 2}
+  _baseCooldown: 1
+  _targeting: {fileID: 11400000, guid: 5301d4008e243914ebd7ff8b63969c0b, type: 2}
+  _animationName: Attack
+  _overridesCast: 0
+  _passive: {fileID: 0}
+  _mainValue: 3
+  _mainType: {fileID: 11400000, guid: 3e63d3e0ee0c3794791636ccd88164ef, type: 2}
+  _secondaryValue: 0
+  _secondaryType: {fileID: 0}
+  _tertiaryValue: 0
+  _tertiaryType: {fileID: 0}
+  _duration: 0
+  _tickInterval: 0
+  _sfx: {fileID: 11400000, guid: 233e2e76875afbf419cdf5ae409aabed, type: 2}
+  floatDataKeys: []
+  floatData: []
+  typeDataKeys: []
+  typeData: []
+  intDataKeys: []
+  intData: 

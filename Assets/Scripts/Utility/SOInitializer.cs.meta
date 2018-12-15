@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fb3c9b80dcaf16c458f2e29caebabcbd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _sfxPoolSet: {fileID: 11400000, guid: be585355ae825504b8d782913aea8711, type: 2}
+  - _floatingTextPool: {fileID: 11400000, guid: 928ef4b9213ffc047b97bad86153f5b2,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
