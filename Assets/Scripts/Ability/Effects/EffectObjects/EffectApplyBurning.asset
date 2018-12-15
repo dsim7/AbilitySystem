@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f82ea821aedc24b42877ad5197039c0b, type: 3}
-  m_Name: MainDamage
+  m_Script: {fileID: 11500000, guid: 761262055e00510418a2c69c5c21fa2d, type: 3}
+  m_Name: EffectApplyBurning
   m_EditorClassIdentifier: 
-  _miscDataLabels: []
   _sfx: {fileID: 0}
+  _buff: {fileID: 11400000, guid: 06d75379a2be03e46974776f65a1acff, type: 2}

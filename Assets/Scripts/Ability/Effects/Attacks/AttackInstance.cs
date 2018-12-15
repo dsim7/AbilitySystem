@@ -6,7 +6,7 @@ namespace SkySeekers.AbilitySystem
     [Serializable]
     public class AttackInstance : InstanceBase
     {
-        public static AttackInstance Attack(AbilityEffect origin, AbilityCaster attacker, EventHandlerObject target,
+        public static AttackInstance Attack(AbilityEffect origin, AbilityCaster attacker, EventHandler target,
             float amount, DamageType type, AbilitySFXPool sfx)
         {
             AttackInstance atkInst = new AttackInstance(origin, attacker, target, amount, type, sfx);
@@ -16,7 +16,7 @@ namespace SkySeekers.AbilitySystem
 
         public AbilityEffect OriginEffect { get; set; }
         public AbilityCaster Attacker { get; set; }
-        public EventHandlerObject Target { get; set; }
+        public EventHandler Target { get; set; }
         public AbilitySFXPool SFX { get; set; }
         public float Damage { get; set; }
         public DamageType Type { get; set; }
@@ -28,7 +28,7 @@ namespace SkySeekers.AbilitySystem
         public bool IsCrit { get; set; }
         public bool IsDefended { get; set; }
 
-        AttackInstance(AbilityEffect origin, AbilityCaster attacker, EventHandlerObject target,
+        AttackInstance(AbilityEffect origin, AbilityCaster attacker, EventHandler target,
             float amount, DamageType type, AbilitySFXPool sfx)
         {
             OriginEffect = origin;
@@ -71,9 +71,14 @@ namespace SkySeekers.AbilitySystem
                 if (critDeter < CritChance)
                 {
                     IsCrit = true;
+                    Damage *= CritMultiplier;
+                }
+                Attacker.EventHandler.AttackEvents.Trigger(EventFlag.HIT_WITH_ATTACK, this);
+                Target.AttackEvents.Trigger(EventFlag.HIT_BY_ATTACK, this);
+                if (IsCrit)
+                {
                     Attacker.EventHandler.AttackEvents.Trigger(EventFlag.CRIT, this);
                     Target.AttackEvents.Trigger(EventFlag.CRITTED, this);
-                    Damage *= CritMultiplier;
                 }
                 DamageInstance.Damage(OriginEffect, Attacker, Target, Damage, Type, IsCrit, IsDefended);
             }

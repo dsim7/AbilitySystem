@@ -8,13 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28f6b1cdc3f09644aa8e22c43b4c1ce1, type: 3}
-  m_Name: BlockBuff
+  m_Script: {fileID: 11500000, guid: e7f492c397653544b813ee7d4294127c, type: 3}
+  m_Name: Burning
   m_EditorClassIdentifier: 
   _doesStack: 0
   _tickOnApply: 0
   _durationOverride: 0
   _tickIntervalOverride: 0
-  _passives:
-  - {fileID: 11400000, guid: aad6d03c81a212146835196fe7f3437e, type: 2}
-  _sfx: {fileID: 0}
+  _sfx: {fileID: 11400000, guid: 53944b3ef16217b4fa6afface20c2697, type: 2}

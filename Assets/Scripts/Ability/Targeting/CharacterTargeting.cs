@@ -6,8 +6,8 @@ namespace SkySeekers.AbilitySystem
 {
     public class CharacterTargeting : MonoBehaviour
     {
-        EventHandlerObject _currentTarget;
-        public EventHandlerObject CurrentTarget
+        EventHandler _currentTarget;
+        public EventHandler CurrentTarget
         {
             get { return _currentTarget; }
             set { _currentTarget = value; Debug.Log("Target set to " + _currentTarget); }

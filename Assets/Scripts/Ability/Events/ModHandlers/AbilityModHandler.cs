@@ -20,12 +20,12 @@ namespace SkySeekers.AbilitySystem
             _mod = mod;
         }
 
-        public override void AddTo(EventHandlerObject handler)
+        public override void AddTo(EventHandler handler)
         {
             handler.AbilityEvents.Add(_flag, _mod);
         }
 
-        public override void RemoveFrom(EventHandlerObject handler)
+        public override void RemoveFrom(EventHandler handler)
         {
             handler.AbilityEvents.Remove(_flag, _mod);
         }

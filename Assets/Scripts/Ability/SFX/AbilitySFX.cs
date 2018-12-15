@@ -1,10 +1,14 @@
 ﻿
+using System.Collections;
 using UnityEngine;
 
 namespace SkySeekers.AbilitySystem
 {
+
     public class AbilitySFX : MonoBehaviour
     {
+        public bool clearOnEnd;
+
         ParticleSystem _particle;
 
         void Start()
@@ -23,6 +27,10 @@ namespace SkySeekers.AbilitySystem
         public void Despawn()
         {
             _particle.Stop();
+            if (clearOnEnd)
+            {
+                _particle.Clear();
+            }
         }
     }
 }

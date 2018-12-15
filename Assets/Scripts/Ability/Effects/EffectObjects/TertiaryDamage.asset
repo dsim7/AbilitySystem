@@ -11,5 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfcac461e980ecc4f8f5c99e8b8a9654, type: 3}
   m_Name: TertiaryDamage
   m_EditorClassIdentifier: 
-  _miscDataLabels: []
   _sfx: {fileID: 0}

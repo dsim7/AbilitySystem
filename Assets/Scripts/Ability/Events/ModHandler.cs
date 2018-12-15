@@ -3,8 +3,8 @@ namespace SkySeekers.AbilitySystem
 {
     public abstract class ModHandler
     {
-        public abstract void AddTo(EventHandlerObject handler);
+        public abstract void AddTo(EventHandler handler);
 
-        public abstract void RemoveFrom(EventHandlerObject handler);
+        public abstract void RemoveFrom(EventHandler handler);
     }
 }

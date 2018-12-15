@@ -6,9 +6,9 @@ namespace SkySeekers.AbilitySystem
     [CreateAssetMenu(menuName = "Ability/Targeting/Self")]
     public class TargetingSelf : AbilityTargeting
     {
-        public override EventHandlerObject[] GetTargets(AbilityCaster caster)
+        public override EventHandler[] GetTargets(AbilityCaster caster)
         {
-            EventHandlerObject[] targets = { caster.GetComponent<EventHandlerObject>() };
+            EventHandler[] targets = { caster.GetComponent<EventHandler>() };
             return targets;
         }
     }

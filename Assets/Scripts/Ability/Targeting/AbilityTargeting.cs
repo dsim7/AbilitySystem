@@ -8,6 +8,6 @@ namespace SkySeekers.AbilitySystem
         bool _targetAtStart = true;
         public bool TargetAtStart { get { return _targetAtStart; } }
 
-        public abstract EventHandlerObject[] GetTargets(AbilityCaster caster);
+        public abstract EventHandler[] GetTargets(AbilityCaster caster);
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 namespace SkySeekers.AbilitySystem
 {
-    public class EventHandlerObject : MonoBehaviour
+    public class EventHandler : MonoBehaviour
     {
         public List<BuffInstance> Buffs { get; private set; }
 

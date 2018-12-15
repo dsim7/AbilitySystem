@@ -18,6 +18,8 @@ namespace SkySeekers.AbilitySystem
         DEFENDED,
         MISS,
         MISSED,
+        HIT_WITH_ATTACK,
+        HIT_BY_ATTACK,
 
         START_CASTING_ABILITY,
         FINISH_CASTING_ABILITY,

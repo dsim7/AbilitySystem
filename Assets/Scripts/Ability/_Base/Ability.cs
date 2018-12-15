@@ -29,7 +29,7 @@ namespace SkySeekers.AbilitySystem
         {
             if (CurrentCooldown <= 0)
             {
-                EventHandlerObject[] targets = null;
+                EventHandler[] targets = null;
 
                 // If the Ability targets at start, search for targets
                 if (Template.Targeting.TargetAtStart)
@@ -67,7 +67,7 @@ namespace SkySeekers.AbilitySystem
             }
         }
 
-        public static bool HasValidTarget(EventHandlerObject[] targets)
+        public static bool HasValidTarget(EventHandler[] targets)
         {
             if (targets != null)
             {

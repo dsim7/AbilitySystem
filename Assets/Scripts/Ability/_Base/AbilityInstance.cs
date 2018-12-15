@@ -10,13 +10,13 @@ namespace SkySeekers.AbilitySystem
         public Ability Ability { get { return _ability; } }
         AbilityCaster _caster;
         public AbilityCaster Caster { get { return _caster; } }
-        EventHandlerObject[] _targets;
-        public EventHandlerObject[] Targets { get { return _targets; } }
+        EventHandler[] _targets;
+        public EventHandler[] Targets { get { return _targets; } }
         AbilityData _data;
         public AbilityData Data { get { return _data; } }
 
         public static AbilityInstance Cast(Ability originAbility, AbilityCaster caster,
-            EventHandlerObject[] targets, AbilityData data)
+            EventHandler[] targets, AbilityData data)
         {
             AbilityInstance instance = new AbilityInstance(originAbility, caster, targets, data);
             instance.Start();
@@ -24,7 +24,7 @@ namespace SkySeekers.AbilitySystem
         }
 
         AbilityInstance(Ability originAbility, AbilityCaster caster,
-            EventHandlerObject[] targets, AbilityData data)
+            EventHandler[] targets, AbilityData data)
         {
             _ability = originAbility;
             _caster = caster;

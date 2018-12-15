@@ -9,7 +9,7 @@ namespace SkySeekers.AbilitySystem
     [Serializable]
     public class BuffInstance : InstanceBase
     {
-        public static BuffInstance ApplyBuff(AbilityEffect origin, Buff buff, AbilityCaster caster, EventHandlerObject target, AbilityData data)
+        public static BuffInstance ApplyBuff(AbilityEffect origin, Buff buff, AbilityCaster caster, EventHandler target, AbilityData data)
         {
             BuffInstance buffInst = new BuffInstance(origin, buff, caster, target, data);
             buffInst.Start();
@@ -19,7 +19,7 @@ namespace SkySeekers.AbilitySystem
         public AbilityEffect OriginEffect { get; set; }
         public Buff Buff { get; set; }
         public AbilityCaster Caster { get; set; }
-        public EventHandlerObject Target { get; set; }
+        public EventHandler Target { get; set; }
         public AbilityData Data { get; set; }
         public float CurrentDuration { get; set; }
         public float TickInterval { get; set; }
@@ -28,7 +28,7 @@ namespace SkySeekers.AbilitySystem
 
         List<ModHandler> _mods = new List<ModHandler>();
 
-        BuffInstance(AbilityEffect originEffect, Buff buff, AbilityCaster caster, EventHandlerObject target, AbilityData data)
+        BuffInstance(AbilityEffect originEffect, Buff buff, AbilityCaster caster, EventHandler target, AbilityData data)
         {
             OriginEffect = originEffect;
             Buff = buff;

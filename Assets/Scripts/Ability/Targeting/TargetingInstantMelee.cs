@@ -10,18 +10,18 @@ namespace SkySeekers.AbilitySystem
         [SerializeField]
         LayerMask _layer;
 
-        public override EventHandlerObject[] GetTargets(AbilityCaster caster)
+        public override EventHandler[] GetTargets(AbilityCaster caster)
         {
             CharacterMeleeVector meleeVector = caster.EventHandler.GetComponent<Character>().MeleeVector;
             if (meleeVector == null)
             {
                 Debug.LogWarning("Caster has no melee vector.");
-                return new EventHandlerObject[0];
+                return new EventHandler[0];
             }
             Collider[] targetColliders = Physics.OverlapSphere(meleeVector.HitTransform.position,
                 meleeVector.HitRadius, _layer);
-            EventHandlerObject[] targets = targetColliders.Select(collider => collider.GetComponent<EventHandlerObject>()).ToArray();
-            targets = targets.Where(target => target != caster.GetComponent<EventHandlerObject>()).ToArray();
+            EventHandler[] targets = targetColliders.Select(collider => collider.GetComponent<EventHandler>()).ToArray();
+            targets = targets.Where(target => target != caster.GetComponent<EventHandler>()).ToArray();
             return targets;
         }
     }

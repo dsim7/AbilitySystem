@@ -26,7 +26,7 @@ namespace SkySeekers.AbilitySystem
         AbilitySFXPool _sfx;
         public AbilitySFXPool SFX { get { return _sfx; } }
 
-        public void Apply(AbilityEffect origin, AbilityCaster caster, EventHandlerObject target, AbilityData data)
+        public void Apply(AbilityEffect origin, AbilityCaster caster, EventHandler target, AbilityData data)
         {
             if (!_doesStack)
             {

@@ -7,7 +7,7 @@ namespace SkySeekers.AbilitySystem
     public class EffectDealSecondaryDamage : AbilityEffect
     {
         public override void ApplyEffect(AbilityCaster caster,
-            EventHandlerObject[] targets, AbilityData data)
+            EventHandler[] targets, AbilityData data)
         {
             for (int i = 0; i < targets.Length; i++)
             {

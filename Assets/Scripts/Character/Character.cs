@@ -14,8 +14,8 @@ public class Character : MonoBehaviour
 
     AbilityCaster _caster;
     public AbilityCaster Caster { get { return _caster; } }
-    EventHandlerObject _eventHandler;
-    public EventHandlerObject EventHandler { get { return _eventHandler; } }
+    EventHandler _eventHandler;
+    public EventHandler EventHandler { get { return _eventHandler; } }
 
     CharacterTargeting _targeting;
     public CharacterTargeting Targeting { get { return _targeting; } }
@@ -23,10 +23,7 @@ public class Character : MonoBehaviour
     public CharacterFloatingText FloatingText { get { return _floatingText; } }
     CharacterMeleeVector _meleeVector;
     public CharacterMeleeVector MeleeVector { get { return _meleeVector; } }
-
-    [SerializeField]
-    float _maxHealth;
-    public float MaxHealth { get { return _maxHealth; } protected set { _maxHealth = value; } }
+    
     [SerializeField]
     float _attackPower;
     public float AttackPower { get { return _attackPower; } protected set { _attackPower = value; } }
@@ -43,15 +40,14 @@ public class Character : MonoBehaviour
     void Awake()
     {
         _caster = GetComponent<AbilityCaster>();
-        _eventHandler = GetComponent<EventHandlerObject>();
+        _eventHandler = GetComponent<EventHandler>();
         _targeting = GetComponent<CharacterTargeting>();
         _floatingText = GetComponent<CharacterFloatingText>();
         _meleeVector = GetComponent<CharacterMeleeVector>();
-
-        MaxHealth = _template.Health;
+        
         AttackPower = _template.AttackPower;
         Armor = _template.Armor;
-        Health = MaxHealth;
+        Health = _template.Health;
         Dead = false;
     }
 

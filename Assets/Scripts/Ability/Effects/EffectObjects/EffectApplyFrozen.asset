@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76a2608288032794ca1bb5e2dd8eb6df, type: 3}
-  m_Name: MainAttack
+  m_Script: {fileID: 11500000, guid: 761262055e00510418a2c69c5c21fa2d, type: 3}
+  m_Name: EffectApplyFrozen
   m_EditorClassIdentifier: 
-  _miscDataLabels: []
   _sfx: {fileID: 0}
+  _buff: {fileID: 11400000, guid: a672f7c71af329345bb4ed1f3688f44f, type: 2}

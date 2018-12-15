@@ -101,9 +101,9 @@ GameObject:
   - component: {fileID: 114996371149369528}
   - component: {fileID: 114987248966538732}
   - component: {fileID: 114828871131650436}
-  - component: {fileID: 114555973919016650}
   - component: {fileID: 114441999394073740}
   - component: {fileID: 114975510958919078}
+  - component: {fileID: 114943126305556582}
   m_Layer: 0
   m_Name: GhostMan
   m_TagString: Untagged
@@ -312,17 +312,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pool: {fileID: 11400000, guid: 928ef4b9213ffc047b97bad86153f5b2, type: 2}
---- !u!114 &114555973919016650
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1758602888402914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3df852aa49104b64aa6d78de15f7c129, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114828871131650436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -332,6 +321,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c72eecc623f15a468c6d45d54494f2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114943126305556582
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1758602888402914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e6bbf8972c8ede48b3dc5e404d9cc6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114975510958919078
@@ -360,7 +360,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _template: {fileID: 11400000, guid: aa8d8f11280a7644397ac2febd416d43, type: 2}
-  _maxHealth: 0
   _attackPower: 0
   _armor: 0
   _health: 500

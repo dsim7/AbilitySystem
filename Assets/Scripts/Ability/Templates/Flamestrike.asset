@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b6e4d30725669a448f460b29bda71a5, type: 3}
+  m_Name: Flamestrike
+  m_EditorClassIdentifier: 
+  _name: Flamestrike
+  _tooltip: Attack the target for 15 Fire damage and sets the target ablaze, dealing
+    10 Fire damage per second. Being attacked incurs this damage as well. Lasts 10
+    seconds. 10 second cooldown.
+  _type: {fileID: 11400000, guid: f0e24449ff291e94da0edb606cd2f876, type: 2}
+  _effects:
+  - {fileID: 11400000, guid: db9b439f9879b114090f04ea3b85123a, type: 2}
+  - {fileID: 11400000, guid: 8dcb6b65f8d2d564f8f08ee3f645db23, type: 2}
+  _baseCooldown: 10
+  _targeting: {fileID: 11400000, guid: 5301d4008e243914ebd7ff8b63969c0b, type: 2}
+  _animationName: Attack
+  _overridesCast: 0
+  _passive: {fileID: 0}
+  _mainValue: 15
+  _mainType: {fileID: 11400000, guid: 98777afcec1b9db4a9c345b8d498af98, type: 2}
+  _secondaryValue: 10
+  _secondaryType: {fileID: 11400000, guid: 98777afcec1b9db4a9c345b8d498af98, type: 2}
+  _tertiaryValue: 0
+  _tertiaryType: {fileID: 0}
+  _duration: 10
+  _tickInterval: 1
+  _sfx: {fileID: 0}
+  floatDataKeys: []
+  floatData: []
+  typeDataKeys: []
+  typeData: []
+  intDataKeys: []
+  intData: 

@@ -36,12 +36,12 @@ GameObject:
   - component: {fileID: 4461882684345642}
   - component: {fileID: 65788551031557236}
   - component: {fileID: 95922334437410330}
-  - component: {fileID: 114879113423836438}
   - component: {fileID: 114893478363767650}
   - component: {fileID: 114867585930173264}
   - component: {fileID: 114703340438410034}
   - component: {fileID: 114730717272152310}
   - component: {fileID: 114802678612207578}
+  - component: {fileID: 114867909227001922}
   m_Layer: 10
   m_Name: BoneMan
   m_TagString: Untagged
@@ -392,7 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c72eecc623f15a468c6d45d54494f2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114879113423836438
+--- !u!114 &114867909227001922
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1048450773341726}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3df852aa49104b64aa6d78de15f7c129, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e6bbf8972c8ede48b3dc5e404d9cc6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &114893478363767650
@@ -415,7 +415,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _template: {fileID: 0}
-  _maxHealth: 0
   _attackPower: 0
   _armor: 0
   _health: 1000

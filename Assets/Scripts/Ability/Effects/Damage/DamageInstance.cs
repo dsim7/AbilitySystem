@@ -6,7 +6,7 @@ namespace SkySeekers.AbilitySystem
     [Serializable]
     public class DamageInstance : InstanceBase
     {
-        public static DamageInstance Damage(AbilityEffect origin, AbilityCaster dealer, EventHandlerObject target,
+        public static DamageInstance Damage(AbilityEffect origin, AbilityCaster dealer, EventHandler target,
             float amount, DamageType type, bool isCrit=false, bool isDefended=false)
         {
             DamageInstance dmgInst = new DamageInstance(origin, dealer, target,
@@ -17,13 +17,13 @@ namespace SkySeekers.AbilitySystem
 
         public AbilityEffect OriginEffect { get; set; }
         public AbilityCaster Dealer { get; set; }
-        public EventHandlerObject Target { get; set; }
+        public EventHandler Target { get; set; }
         public float Amount { get; set; }
         public DamageType Type { get; set; }
         public bool IsCrit { get; set; }
         public bool IsDefended { get; set; }
 
-        DamageInstance(AbilityEffect origin, AbilityCaster dealer, EventHandlerObject target,
+        DamageInstance(AbilityEffect origin, AbilityCaster dealer, EventHandler target,
             float amount, DamageType type, bool isCrit, bool isDefended)
         {
             OriginEffect = origin;

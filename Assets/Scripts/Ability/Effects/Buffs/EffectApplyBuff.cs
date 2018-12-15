@@ -9,7 +9,7 @@ namespace SkySeekers.AbilitySystem
         [SerializeField]
         Buff _buff;
 
-        public override void ApplyEffect(AbilityCaster caster, EventHandlerObject[] targets, AbilityData data)
+        public override void ApplyEffect(AbilityCaster caster, EventHandler[] targets, AbilityData data)
         {
             for (int i = 0; i < targets.Length; i++)
             {

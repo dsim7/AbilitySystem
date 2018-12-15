@@ -8,8 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34f641c8a2124a545bf8c7a13e9e47f0, type: 3}
-  m_Name: TertiaryAttack
+  m_Script: {fileID: 11500000, guid: f82ea821aedc24b42877ad5197039c0b, type: 3}
+  m_Name: MainDamage
   m_EditorClassIdentifier: 
-  _miscDataLabels: []
   _sfx: {fileID: 0}

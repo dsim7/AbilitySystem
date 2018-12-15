@@ -2,13 +2,21 @@
 
 namespace SkySeekers.AbilitySystem
 {
-    [RequireComponent(typeof(EventHandlerObject))]
+    [RequireComponent(typeof(EventHandler))]
     public class AbilityCaster : MonoBehaviour
     {
-        EventHandlerObject _eventHandler;
-        public EventHandlerObject EventHandler { get { return _eventHandler; } }
+        EventHandler _eventHandler;
+        public EventHandler EventHandler { get { return _eventHandler; } }
         Animator _animator;
         public Animator Animator { get { return _animator; } }
+
+        public Ability[] Abilities { get; private set; }
+
+        AbilityInstance _abilityBeingCast;
+        public AbilityInstance AbilityBeingCast { get { return _abilityBeingCast; } }
+
+        int canActBuffer = 0;
+        public bool CanAct { get { return canActBuffer == 0; } }
 
         [SerializeField]
         AbilityTemplateSet _abilityTemplates;
@@ -23,12 +31,6 @@ namespace SkySeekers.AbilitySystem
                 Init();
             }
         }
-
-        public Ability[] Abilities { get; private set; }
-
-        AbilityInstance _abilityBeingCast;
-        public AbilityInstance AbilityBeingCast { get { return _abilityBeingCast; } }
-
         [SerializeField]
         float _critChance;
         public float CritChance { get { return _critChance; } set { _critChance = value; } }
@@ -39,7 +41,7 @@ namespace SkySeekers.AbilitySystem
 
         void Start()
         {
-            _eventHandler = GetComponent<EventHandlerObject>();
+            _eventHandler = GetComponent<EventHandler>();
             _animator = GetComponent<Animator>();
             
             Init();
@@ -101,27 +103,41 @@ namespace SkySeekers.AbilitySystem
 
         public bool CastAbility(int abilityIndex)
         {
-            if (abilityIndex >= 0 && abilityIndex < Abilities.Length && 
-                Abilities[abilityIndex] != null &&
-                (_abilityBeingCast == null || Abilities[abilityIndex].Template.OverridesCast))
+            if (CanCastSpell(abilityIndex))
             {
-                Debug.Log("Setting current cast");
                 _abilityBeingCast = Abilities[abilityIndex].Cast(this);
                 return true;
             }
             return false;
         }
 
+        bool CanCastSpell(int abilityIndex)
+        {
+            return CanAct &&   // not silenced
+                abilityIndex >= 0 && abilityIndex < Abilities.Length &&  // ability Index in rage
+                Abilities[abilityIndex] != null &&    // ability is not null
+                (_abilityBeingCast == null || Abilities[abilityIndex].Template.OverridesCast);  // currently not casting an ability, or casted ability overrides
+        }
+
         public bool CompleteAbility()
         {
             if (_abilityBeingCast != null)
             {
-                Debug.Log("Executing current cast");
                 _abilityBeingCast.Complete();
                 _abilityBeingCast = null;
                 return true;
             }
             return false;
+        }
+
+        public void AddDisabler()
+        {
+            canActBuffer++;
+        }
+
+        public void RemoveDisabler()
+        {
+            canActBuffer--;
         }
     }
 }

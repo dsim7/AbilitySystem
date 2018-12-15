@@ -194,9 +194,9 @@ GameObject:
   - component: {fileID: 114459611381228504}
   - component: {fileID: 114037026088790736}
   - component: {fileID: 114535685266578718}
-  - component: {fileID: 114912868519092018}
   - component: {fileID: 114042782750190316}
   - component: {fileID: 114385635486720626}
+  - component: {fileID: 114437682042557002}
   m_Layer: 0
   m_Name: PooMan
   m_TagString: Untagged
@@ -440,6 +440,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _hitTransform: {fileID: 4323840461484892}
   _hitRadius: 0.7
+--- !u!114 &114437682042557002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1969420124355342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e6bbf8972c8ede48b3dc5e404d9cc6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114459611381228504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -452,7 +463,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _template: {fileID: 0}
-  _maxHealth: 0
   _attackPower: 0
   _armor: 0
   _health: 100
@@ -466,17 +476,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c72eecc623f15a468c6d45d54494f2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114912868519092018
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1969420124355342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3df852aa49104b64aa6d78de15f7c129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212148342763995632

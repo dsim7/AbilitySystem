@@ -8,6 +8,6 @@ namespace SkySeekers.AbilitySystem
         AbilitySFXPool _sfx;
         public AbilitySFXPool SFXOverride { get { return _sfx; } }
 
-        public abstract void ApplyEffect(AbilityCaster caster, EventHandlerObject[] targets, AbilityData data);
+        public abstract void ApplyEffect(AbilityCaster caster, EventHandler[] targets, AbilityData data);
     }
 }
