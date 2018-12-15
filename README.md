@@ -2,7 +2,7 @@
 
 A Unity project to model an combat ability system.
 
-Abilities are implemented with a generalized and modular template system using Scriptable Objects. This allows developers to create and configure abilities with minimal coding. The system utilizes an event system to enable effects that observe certain events.
+Abilities are implemented with a generalized and modular template system using Scriptable Objects. This allows developers to create and configure abilities with minimal coding. The system utilizes an event system to enable effects that observe combat events such as a target being attacked.
 
 ## Sample Abilities
 #### Heavy Attack
