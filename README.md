@@ -16,10 +16,10 @@ The next attack against the caster within 1 second are defended and will miss.
 Passive Effect: Defended attacks against the caster resets the cooldown of Dodge.
 
 #### Flamestrike
-An attack which deals 15 Fire damage and sets the target on fire. While on fire, the target will take 10 damage every second. Being hit by an attack while on fire will also incur this damage. Lasts 10 seconds.
+An attack which deals 15 Fire damage and sets the target on fire. While on fire, the target will burn and take 10 Fire damage every second. Being hit by an attack while on fire will also incur burn damage. Lasts 10 seconds.
 
 #### Freeze
-Freezes the target, making them unable to act. The next attack that hits this target will shatter the target, dealing 100 damage and ending the effect. If the attack was a critical hit, shatter damage is doubled. Lasts a maximum of 8 seconds. 10 second cooldown.
+Freezes the target, making them unable to act. The next attack that hits this target will shatter the target, dealing 100 Ice damage and end the effect. If the attack was a critical hit, shatter damage is doubled. Lasts a maximum of 8 seconds. 10 second cooldown.
 
 
 
