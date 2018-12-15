@@ -6,14 +6,14 @@ Abilities are implemented with a generalized and modular template system using S
 
 ## Sample Abilities
 #### Heavy Attack
-Attack the target for 20 damage.
+Attack the target for 20 Physical damage.
 
 #### Block
 Attacks against the target for the next 5 seconds will be defended and will deal 50% less damage.
 
 #### Dodge
 The next attack against the caster within 1 second are defended and will miss.
-Passive Effect: Defended attacks against the caster resets the cooldown of Dodge.
+Passive Effect: Defended attacks resets the cooldown of Dodge.
 
 #### Flamestrike
 An attack which deals 15 Fire damage and sets the target on fire. While on fire, the target will burn and take 10 Fire damage every second. Being hit by an attack while on fire will also incur burn damage. Lasts 10 seconds.
