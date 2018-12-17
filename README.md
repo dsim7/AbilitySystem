@@ -22,7 +22,14 @@ An attack which deals 15 Fire damage and sets the target on fire. While on fire,
 Freezes the target, making them unable to act. The next attack that hits this target will shatter the target, dealing 100 Ice damage and end the effect. If the attack was a critical hit, shatter damage is doubled. Lasts a maximum of 8 seconds. 10 second cooldown.
 
 
-
+## Demo
+The demo scene has two characters with a set of sample abilities.
+Click on one of them to activate them as the character you want to use.
+Press 1 to perform a regular attack.
+Press 2 to activate dodge.
+Press 3 to activate block.
+Press 4 to perform a freeze attack.
+Press 5 to perform a flamestrike attack.
 
 
 
